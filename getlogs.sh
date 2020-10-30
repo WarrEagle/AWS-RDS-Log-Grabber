@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #
 # RDS Log filename grabber and download utility. By Michael Quale
-# Reguires Python3.7, PIP and BOTO3 to send mail. Requires pgBadger to generate reports https://github.com/darold/pgbadger.git
+# Reguires Python3.7, PIP3 and BOTO3 to send mail. Requires pgBadger to generate reports https://github.com/darold/pgbadger.git
 #
 # Get list of log file names from RDS via API call. Change Database Identifier to match your environment
 #
