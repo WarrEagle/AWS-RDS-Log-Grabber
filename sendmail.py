@@ -10,11 +10,11 @@ from email.mime.application import MIMEApplication
 
 # Replace sender@example.com with your "From" address.
 # This address must be verified with Amazon SES.
-SENDER = "Michael Quale <michaelquale@gmail.com>"
-RECIPIENT = "michaelquale@gmail.com"
+SENDER = "Michael Quale <michael.quale@accenture.com>"
+RECIPIENT = "michael.quale@accenture.com"
 AWS_REGION = "us-east-1"
 SUBJECT = "pgBadger Query report"
-ATTACHMENT = "/Users/michael.quale/code/ameren/rds-analysis/reports/latest.html"
+ATTACHMENT = "/home/cloudshell-user/AWS-RDS-Log-Grabber/reports/latest.html"
 BODY_TEXT = "Hello,\r\nPlease see the attached file for the database query report."
 CHARSET = "utf-8"
 
@@ -77,7 +77,7 @@ try:
         },
         # ConfigurationSetName=CONFIGURATION_SET
     )
-# Display an error if something goes wrong.	
+# Display an error if something goes wrong.
 except ClientError as e:
     print(e.response['Error']['Message'])
 else:
